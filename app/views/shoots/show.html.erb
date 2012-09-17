@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @shoot.name %>
+</p>
+
+<p>
+  <b>Shoot date:</b>
+  <%= @shoot.shoot_date %>
+</p>
+
+<p>
+  <b>Shoot-description:</b>
+  <%= @shoot.shoot-description %>
+</p>
+
+<p>
+  <b>Original-name:</b>
+  <%= @shoot.original-name %>
+</p>
+
+
+<%= link_to 'Edit', edit_shoot_path(@shoot) %> |
+<%= link_to 'Back', shoots_path %>

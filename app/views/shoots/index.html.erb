@@ -1,0 +1,29 @@
+<h1>Listing shoots</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Shoot date</th>
+    <th>Shoot-description</th>
+    <th>Original-name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shoots.each do |shoot| %>
+  <tr>
+    <td><%= shoot.name %></td>
+    <td><%= shoot.shoot_date %></td>
+    <td><%= shoot.shoot-description %></td>
+    <td><%= shoot.original-name %></td>
+    <td><%= link_to 'Show', shoot %></td>
+    <td><%= link_to 'Edit', edit_shoot_path(shoot) %></td>
+    <td><%= link_to 'Destroy', shoot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shoot', new_shoot_path %>

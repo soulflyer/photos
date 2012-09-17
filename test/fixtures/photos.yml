@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fullsize: MyText
+  original: MyText
+  thumb: MyText
+  shoot: 1
+  watermarked: MyText
+
+two:
+  fullsize: MyText
+  original: MyText
+  thumb: MyText
+  shoot: 1
+  watermarked: MyText
