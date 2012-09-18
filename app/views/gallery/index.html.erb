@@ -1,0 +1,7 @@
+<h1>Gallery</h1>
+<% @shoots.each do |shoot| %>
+  <div class="entry">
+  <h3><%= shoot.name %></h3>
+  <p><%= sanitize(shoot.description) %></p>
+</div>
+<% end %>

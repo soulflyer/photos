@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120917075512) do
+ActiveRecord::Schema.define(:version => 20120918023052) do
 
   create_table "photos", :force => true do |t|
     t.text     "fullsize"
@@ -25,11 +25,11 @@ ActiveRecord::Schema.define(:version => 20120917075512) do
 
   create_table "shoots", :force => true do |t|
     t.string   "name"
-    t.datetime "shoot_date"
-    t.text     "shoot_description"
+    t.datetime "date"
+    t.text     "description"
     t.string   "original_name"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end

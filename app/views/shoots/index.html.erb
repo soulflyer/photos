@@ -4,7 +4,7 @@
   <tr>
     <th>Name</th>
     <th>Shoot date</th>
-    <th>Shoot-description</th>
+    <th>Description</th>
     <th>Original-name</th>
     <th></th>
     <th></th>
@@ -14,9 +14,9 @@
 <% @shoots.each do |shoot| %>
   <tr>
     <td><%= shoot.name %></td>
-    <td><%= shoot.shoot_date %></td>
-    <td><%= shoot.shoot-description %></td>
-    <td><%= shoot.original-name %></td>
+    <td><%= shoot.date %></td>
+    <td><%= shoot.description %></td>
+    <td><%= shoot.original_name %></td>
     <td><%= link_to 'Show', shoot %></td>
     <td><%= link_to 'Edit', edit_shoot_path(shoot) %></td>
     <td><%= link_to 'Destroy', shoot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
