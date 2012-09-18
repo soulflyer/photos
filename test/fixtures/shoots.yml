@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  shoot_date: 2012-09-17 14:55:12
-  shoot-description: MyText
-  original-name: MyString
+  date: 2012-09-17 14:55:12
+  description: MyText
+  original_name: MyString
 
 two:
   name: MyString
-  shoot_date: 2012-09-17 14:55:12
-  shoot-description: MyText
-  original-name: MyString
+  date: 2012-09-17 14:55:12
+  description: MyText
+  original_name: MyString

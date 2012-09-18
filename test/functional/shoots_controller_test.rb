@@ -18,7 +18,7 @@ class ShootsControllerTest < ActionController::TestCase
 
   test "should create shoot" do
     assert_difference('Shoot.count') do
-      post :create, shoot: { name: @shoot.name, original-name: @shoot.original-name, shoot-description: @shoot.shoot-description, shoot_date: @shoot.shoot_date }
+      post :create, shoot: { name: @shoot.name, original_name: @shoot.original_name, description: @shoot.description, date: @shoot.date }
     end
 
     assert_redirected_to shoot_path(assigns(:shoot))
@@ -35,7 +35,7 @@ class ShootsControllerTest < ActionController::TestCase
   end
 
   test "should update shoot" do
-    put :update, id: @shoot, shoot: { name: @shoot.name, original-name: @shoot.original-name, shoot-description: @shoot.shoot-description, shoot_date: @shoot.shoot_date }
+    put :update, id: @shoot, shoot: { name: @shoot.name, original_name: @shoot.original_name, description: @shoot.description, date: @shoot.date }
     assert_redirected_to shoot_path(assigns(:shoot))
   end
 
@@ -43,6 +43,7 @@ class ShootsControllerTest < ActionController::TestCase
     assert_difference('Shoot.count', -1) do
       delete :destroy, id: @shoot
     end
+
 
     assert_redirected_to shoots_path
   end
