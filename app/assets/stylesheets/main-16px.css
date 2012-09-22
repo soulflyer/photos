@@ -1,0 +1,136 @@
+/*	Less Framework 4 with 16/24 type presets
+        http://lessframework.com
+        by Joni Korpi
+        License: http://opensource.org/licenses/mit-license.php	*/
+/*	Resets
+        ------	*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup,
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+  display: block; }
+
+a img {
+  border: 0; }
+
+/*		Default Layout: 1176px.
+                Gutters: 24px.
+                Outer margins: 48px.
+                Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10     11     12
+px      68    160    252    344    436    528    620    712    804    896    988    1080*/
+body {
+  margin: auto;
+  width: 1080px;
+  padding: 10px 48px 84px;
+  background: #937253;
+  color: #100f0c;
+  -webkit-text-size-adjust: 100%;
+  /* Stops Mobile Safari from auto-adjusting font-sizes */
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif; }
+
+#header {
+  background: #9d925c url(../images/Saigon.jpg);
+  background-size: 100% 100%;
+  height: 165px;
+  border: 1px solid #634630; }
+  #header h1 {
+    font: bold 48px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin-left: 8px;
+    margin-top: 5px;
+    text-shadow: 1px 1px 7px #f7e6a4; }
+
+#links {
+  display: block; }
+  #links li {
+    display: inline;
+    border: 1px hidden #7f674a;
+    padding: 2px 2px 2px 5px;
+    margin: 1px 4px 1px 0; }
+  #links ul {
+    margin: -23px 0 0;
+    padding: 2px 0 0; }
+  #links a:link, #links a:visited, #links a:active {
+    color: #100f0c;
+    text-decoration: none;
+    text-shadow: 1px 1px 4px #f7e6a4; }
+
+#footer {
+  background: #9d925c url(../images/Saigon2.jpg);
+  background-size: contain;
+  height: 96px;
+  clear: both;
+  border: 1px solid #634630; }
+
+/*		Tablet Layout: 768px.
+                Gutters: 24px.
+                Outer margins: 28px.
+                Inherits styles from: Default Layout.
+                -----------------------------------------------------------------
+                cols    1     2      3      4      5      6      7      8
+                px      68    160    252    344    436    528    620    712    */
+@media only screen and (min-width: 768px) and (max-width: 1176px) {
+  body {
+    width: 712px;
+    padding: 8px 28px 60px; }
+
+  #header {
+    height: 109px; }
+    #header h1 {
+      font-size: 36px;
+      margin-left: 5px;
+      margin-top: 4px; }
+
+  #footer {
+    height: 65px; } }
+/*		Mobile Layout: 320px.
+                Gutters: 24px.
+                Outer margins: 34px.
+                Inherits styles from: Default Layout.
+                ---------------------------------------------
+                cols    1     2      3
+                px      68    160    252    */
+@media only screen and (max-width: 767px) {
+  body {
+    width: 100%;
+    padding: 0px 0px 60px; }
+
+  #header {
+    height: 67px;
+    background-size: 100% 100%; }
+    #header h1 {
+      font-size: 24px;
+      margin-left: 3px;
+      margin-top: 1px; }
+
+  #links ul {
+    font-size: 12px;
+    margin: -18px 0 0; }
+
+  #footer {
+    height: 39px;
+    background-size: 100% 100%; } }
+/*		Wide Mobile Layout: 480px.
+                Gutters: 24px.
+                Outer margins: 22px.
+                Inherits styles from: Default Layout, Mobile Layout.
+                ------------------------------------------------------------
+                cols    1     2      3      4      5
+                px      68    160    252    344    436    */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  #header {
+    height: 90px; } }
+/*	Retina media query.
+        Overrides styles for devices with a
+        device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
