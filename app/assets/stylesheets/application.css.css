@@ -10,10 +10,4 @@
  *
  *= require_self
  *= require main-16px
-
-
-
  */
-#body {
-  width: 450px;
-  background: #ff0000; }
