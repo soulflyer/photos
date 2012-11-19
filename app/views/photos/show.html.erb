@@ -2,29 +2,13 @@
 
 <p>
   <b>Fullsize:</b>
-  <%= @photo.fullsize %>
-</p>
-
-<p>
-  <b>Original:</b>
-  <%= @photo.original %>
-</p>
-
-<p>
-  <b>Thumb:</b>
-  <%= @photo.thumb %>
+  <%= @photo.name %>
 </p>
 
 <p>
   <b>Shoot:</b>
   <%= @photo.shoot %>
 </p>
-
-<p>
-  <b>Watermarked:</b>
-  <%= @photo.watermarked %>
-</p>
-
 
 <%= link_to 'Edit', edit_photo_path(@photo) %> |
 <%= link_to 'Back', photos_path %>

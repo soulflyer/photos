@@ -2,11 +2,8 @@
 
 <table>
   <tr>
-    <th>Fullsize</th>
-    <th>Original</th>
-    <th>Thumb</th>
+    <th>Name</th>
     <th>Shoot</th>
-    <th>Watermarked</th>
     <th></th>
     <th></th>
     <th></th>
@@ -14,11 +11,8 @@
 
 <% @photos.each do |photo| %>
   <tr>
-    <td><%= photo.fullsize %></td>
-    <td><%= photo.original %></td>
-    <td><%= photo.thumb %></td>
+    <td><%= photo.name %></td>
     <td><%= photo.shoot %></td>
-    <td><%= photo.watermarked %></td>
     <td><%= link_to 'Show', photo %></td>
     <td><%= link_to 'Edit', edit_photo_path(photo) %></td>
     <td><%= link_to 'Destroy', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

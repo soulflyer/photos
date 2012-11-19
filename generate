@@ -1,0 +1,20 @@
+Script started on Sun Nov 18 22:37:34 2012
+uninitialized constant ActionController (NameError)
+/Users/iain/Code/Photos/app/controllers/application_controller.rb:1:in `<top (required)>'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/rb_support/rb_language.rb:129:in `load'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/rb_support/rb_language.rb:129:in `load_code_file'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/runtime/support_code.rb:171:in `load_file'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/runtime/support_code.rb:83:in `block in load_files!'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/runtime/support_code.rb:82:in `each'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/runtime/support_code.rb:82:in `load_files!'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/runtime.rb:175:in `load_step_definitions'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/runtime.rb:40:in `run!'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/cli/main.rb:43:in `execute!'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/lib/cucumber/cli/main.rb:20:in `execute'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/gems/cucumber-1.2.1/bin/cucumber:14:in `<top (required)>'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/bin/cucumber:19:in `load'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/bin/cucumber:19:in `<main>'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/bin/ruby_noexec_wrapper:14:in `eval'
+/Users/iain/.rvm/gems/ruby-1.9.3-p286/bin/ruby_noexec_wrapper:14:in `<main>'
+
+Script done on Sun Nov 18 22:37:35 2012
