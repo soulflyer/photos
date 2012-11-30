@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121112095218) do
+ActiveRecord::Schema.define(:version => 20121129110512) do
 
   create_table "photos", :force => true do |t|
     t.integer  "shoot_id"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(:version => 20121112095218) do
     t.string   "original_name"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "public"
+    t.string   "private"
   end
 
 end
