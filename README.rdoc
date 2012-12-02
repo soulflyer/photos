@@ -2,4 +2,4 @@
 
 started on the 16th sept 2012
 
-See also soulflyer/Loadphotos which is used to manipulate the db
+See also soulflyer/Loadphotos which is used to manipulate the db.
