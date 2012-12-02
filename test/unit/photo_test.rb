@@ -14,13 +14,16 @@ class PhotoTest < ActiveSupport::TestCase
     assert photo.valid?
   end
 
-  test "photo should return full path name for fullsize" do
+  test "photo should return full path names for fullsize, master, thumb and published" do
     photo = Photo.new
     photo.name = "pic.jpg"
     shoot = Shoot.new
     photo.shoot = shoot
     shoot.public = "/tmp/public/testshoot"
-    assert photo.fullsize == "/tmp/public/testshoot/pic.jpg"
-    assert photo.thumb == "/tmp/public/testshoot/thumbs/pic.jpg"
+    shoot.private = "/tmp/private/testshoot"
+    assert photo.fullsize == "/tmp/private/testshoot/pic.jpg", "Incorrect fullsize path"
+    assert photo.thumb == "/tmp/public/testshoot/thumbs/pic.jpg", "Incorrect thumb path"
+    assert photo.master == "/tmp/private/testshoot/masters/pic.jpg", "Incorrect master path"
+    assert photo.published == "/tmp/public/testshoot/pic.jpg", "Incorrect published path"
   end
 end

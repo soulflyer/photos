@@ -4,11 +4,19 @@ class Photo < ActiveRecord::Base
   validates :name, :shoot_id, presence: true
 
   def fullsize
-    [shoot.public, name].join('/')
+    [shoot.private, name].join('/')
   end
 
   def thumb
     [shoot.public, name].join('/thumbs/')
+  end
+
+  def master
+    [shoot.private, name].join('/masters/')
+  end
+
+  def published
+    [shoot.public, name].join('/')
   end
 
 end
