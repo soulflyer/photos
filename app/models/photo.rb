@@ -12,7 +12,12 @@ class Photo < ActiveRecord::Base
   end
 
   def master
-    [shoot.private, name].join('/masters/')
+    basename = [File.basename(name, ".*"), master_file_type].join('.')
+    [shoot.private, basename].join('/masters/')
+  end
+
+  def master= (filetype)
+    self.master_file_type = filetype
   end
 
   def published

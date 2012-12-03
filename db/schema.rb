@@ -11,13 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121129110512) do
+ActiveRecord::Schema.define(:version => 20121203031428) do
 
   create_table "photos", :force => true do |t|
     t.integer  "shoot_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
     t.string   "name"
+    t.string   "master_file_type"
   end
 
   create_table "shoots", :force => true do |t|

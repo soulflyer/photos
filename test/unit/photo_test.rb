@@ -19,11 +19,12 @@ class PhotoTest < ActiveSupport::TestCase
     photo.name = "pic.jpg"
     shoot = Shoot.new
     photo.shoot = shoot
+    photo.master=("nef")
     shoot.public = "/tmp/public/testshoot"
     shoot.private = "/tmp/private/testshoot"
     assert photo.fullsize == "/tmp/private/testshoot/pic.jpg", "Incorrect fullsize path"
     assert photo.thumb == "/tmp/public/testshoot/thumbs/pic.jpg", "Incorrect thumb path"
-    assert photo.master == "/tmp/private/testshoot/masters/pic.jpg", "Incorrect master path"
+    assert photo.master == "/tmp/private/testshoot/masters/pic.nef", "Incorrect master path"
     assert photo.published == "/tmp/public/testshoot/pic.jpg", "Incorrect published path"
   end
 end
